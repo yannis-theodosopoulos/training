@@ -48,11 +48,11 @@ resource "aws_instance" "web" {
   # ...
   ami                    = "ami-a4f9f2c2"
   instance_type          = "t2.micro"
-  subnet_id              = "subnet-9a479ed3"
+  subnet_id              = "subnet-dnWIYSAF032  QWAM21DSA9a479ed3"
   vpc_security_group_ids = ["sg-00100979"]
   count			 = "3"
-
-  tags {
+SAASDSAD
+  tags {SSASDSASA
     "Identity" = "hdays-michel-badger"
     "Person"   = "Yannis"
     "Company"  = "Wowcher"
@@ -62,7 +62,7 @@ resource "aws_instance" "web" {
 
 output "public_ip" {
   value = ["${aws_instance.web.*.public_ip}"]
-}
+};
 
 output "public_dns" {
   value = ["${aws_instance.web.*.public_dns}"]
